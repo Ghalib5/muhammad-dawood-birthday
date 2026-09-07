@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 2nd Birthday Muhammad Dawood 🎂</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="fireworks"></div>
+<div id="confetti"></div>
+
+<section id="welcome" class="screen active">
+  <div class="stars"></div>
+  <div class="welcome-card">
+    <div class="baby-icon">👑</div>
+    <p class="small-title">A VERY SPECIAL DAY FOR</p>
+    <h1>MUHAMMAD<br><span>DAWOOD</span></h1>
+    <div class="age-badge">2 <small>YEARS</small></div>
+    <p class="subtitle">Two years of smiles, laughter and endless love 💙</p>
+    <button class="main-btn" onclick="startBirthday()">Start the Celebration 🎉</button>
+  </div>
+</section>
+
+<section id="cakeScreen" class="screen">
+  <div class="cake-title">
+    <p>MAKE A WISH, LITTLE CHAMP ✨</p>
+    <h2>Blow Out All The Candles!</h2>
+    <span>Tap each flame to turn it off 🔥</span>
+  </div>
+
+  <div class="cake-scene">
+    <div class="number-two">2</div>
+
+    <div class="cake">
+      <div class="cake-top"></div>
+      <div class="icing"></div>
+      <div class="layer layer-one"></div>
+      <div class="cream cream1"></div>
+      <div class="layer layer-two"></div>
+      <div class="plate"></div>
+
+      <div class="candles">
+        <div class="candle" style="--x:8%;--h:68px" onclick="blowCandle(this)"><i class="flame"></i></div>
+        <div class="candle" style="--x:25%;--h:82px" onclick="blowCandle(this)"><i class="flame"></i></div>
+        <div class="candle" style="--x:43%;--h:70px" onclick="blowCandle(this)"><i class="flame"></i></div>
+        <div class="candle" style="--x:61%;--h:86px" onclick="blowCandle(this)"><i class="flame"></i></div>
+        <div class="candle" style="--x:78%;--h:72px" onclick="blowCandle(this)"><i class="flame"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <p id="candleCount">5 candles are still glowing ✨</p>
+</section>
+
+<section id="birthdayScreen" class="screen">
+  <div class="birthday-card">
+    <div class="crown">👑</div>
+    <p class="small-title">TODAY WE CELEBRATE</p>
+    <h1>HAPPY 2<sup>nd</sup><br>BIRTHDAY</h1>
+    <h2>MUHAMMAD DAWOOD 💙</h2>
+    <div class="balloons">🎈 🎈 🎈 🎈 🎈</div>
+    <p class="main-wish">
+      Happy 2nd Birthday to our precious little prince! 🎂<br>
+      May your life always be filled with laughter, happiness, love and beautiful dreams.
+      May every year bring you more joy, more blessings and countless reasons to smile.
+      You are a tiny star who makes every heart around you shine brighter. ✨
+    </p>
+    <button class="main-btn" onclick="showGallery()">See Your Beautiful Memories 📸</button>
+  </div>
+</section>
+
+<section id="galleryScreen" class="screen">
+  <div class="gallery-card">
+    <div class="photo-frame">
+      <img id="memoryImage" src="images/dawood1.jpg" alt="Muhammad Dawood">
+      <div class="frame-sparkle">✨</div>
+    </div>
+    <div class="memory-content">
+      <p id="memoryNumber">MEMORY 1 OF 3</p>
+      <h2 id="memoryTitle">Our Little Prince 👑</h2>
+      <p id="memoryWish">Two years ago, a beautiful little blessing entered our lives and made our world brighter with his tiny smiles and innocent eyes. May you always remain surrounded by love and happiness, dear Dawood. 💙</p>
+      <div class="gallery-buttons">
+        <button onclick="previousMemory()">← Previous</button>
+        <button class="main-btn" onclick="nextMemory()">Next Memory →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="finalScreen" class="screen">
+  <div class="final-card">
+    <div class="big-emoji">🎂🎉👑</div>
+    <h1>HAPPY BIRTHDAY<br>MUHAMMAD DAWOOD</h1>
+    <div class="two">2</div>
+    <p>May Allah bless your life with endless happiness, good health, success and a beautiful future.</p>
+    <p class="love-line">You are loved more than words can ever say. 💙</p>
+    <button class="main-btn" onclick="restart()">Celebrate Again 🎊</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
